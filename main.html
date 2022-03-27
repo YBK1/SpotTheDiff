@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://i.postimg.cc/rmdc8zwJ/lg2.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="mainCss.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gameTitle"></div>
+        <div class="gameWrapper">
+            <div class="game1" id="timeAttackWrapper">
+                <div id="timeAttack"><img src="https://i.postimg.cc/4NVVwLp2/bomb-removebg-preview.png" width="90%"></div>
+                <div><input type="button" value="TIME ATTACK" onclick="location.replace('timeAttack.html')"></div>
+            </div>
+        </div>
+        <div class="login">
+            <div class="logo"></div>
+            <label class="inputName">Email</label>
+            <input type="email" placeholder="abcd@efghijk.com">
+            <label class="inputName">Password</label>
+            <input type="passoword" placeholder="Maximum 12words">
+            <input type="button" value="Submit" onclick="setVisibility.showGame(this)">
+        </div>
+        <div class="gameWrapper">
+            <div class="game2" id="endlessWrapper">
+                <div id="endless"><img src="https://i.postimg.cc/QCWx8zj2/endless-removebg-preview.png" width="90%"></div>
+                <div>
+                    <input type="button" value="ENDLESS MODE" onclick="location.replace('endless.html')">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

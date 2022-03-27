@@ -1,0 +1,89 @@
+body{
+    background: url("https://i.postimg.cc/vBZVvJtj/hems.jpg") no-repeat;
+    background-size:cover; margin:0;
+    padding-left: 30px; padding-right:30px; padding-top: 10px;
+}
+.wrapper{
+    display:grid; width:100%; height:100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+}
+.logo{
+    background: no-repeat center/100% url("https://i.postimg.cc/rmdc8zwJ/lg2.png");
+    width: 100%;
+    height: 55%;
+    margin: auto;
+    border-radius: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.gameTitle{
+    text-align: center;
+    font-size: 50px;
+    grid-column-start: 1; grid-column-end: 4; grid-row-start:1;
+}
+.game1, .game2{
+    width:307px; height:450px;
+    box-sizing: border-box;
+    box-shadow:  -3px 3px 10px #cbced1;
+    background: url("https://i.postimg.cc/wxbhwjPk/frame.png") no-repeat;
+    background-size: contain;
+    visibility:hidden;
+}
+.login{
+    width:350px; height:540px;
+    padding:20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color:white; font-family:sans-serif;
+    grid-row-start:1; grid-row-end: 3; grid-column-start: 2;
+    box-shadow: -3px 3px 10px #cbced1, 3px 3px 10px #cbced1,
+                3px -3px 10px #cbced1, -3px -3px 10px #cbced1;
+}
+label, input{
+    width:100%; box-sizing: border-box;
+    margin-top:10px; margin-bottom: 10px;
+}
+label{
+    padding:10px;
+}
+.login input{
+    padding:10px;
+    border-radius: 40px;
+    box-shadow: -3px 3px 10px #cbced1;
+    font-style: italic;
+}
+.inputName{
+    font-size: 20px;
+}
+#timeAttack, #timeAttack img{
+    width: 80%;
+    height: 70%;
+    border-radius: 15%;
+    margin: auto;
+}
+#timeAttack img{
+    width:100%; height:100%; border-radius: 15%;
+}
+#endless, #endless img{
+    width: auto;
+    height: 70%;
+    border-radius: 15%;
+    margin: auto;
+}
+#endless img{
+    width: 100%; height: 100%; border-radius: 15%;
+}
+.game1 input, .game2 input{
+    width:60%; 
+    padding:5px; padding-top:30px; padding-bottom: 30px;
+    margin-left: 20%;
+    border-radius: 5px;
+    font-size:25px; font-family:fantasy;
+    background:#ecf0f3;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+.gameWrapper{
+    display: flex;
+    justify-content: center;
+}
