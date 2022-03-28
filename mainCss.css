@@ -2,7 +2,6 @@ html, body{
     width:100%; height:100%;
     margin:0;
 }
-
 body{
     background: url("https://i.postimg.cc/vBZVvJtj/hems.jpg") no-repeat;
     background-size:cover;
@@ -15,6 +14,10 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     column-gap: 5vw;
+}
+.loginWrapper{
+    display: flex;
+    justify-content: center; align-items: center;
 }
 .login{
     width:28vw; height:90vh;
@@ -55,38 +58,34 @@ label, input{
 }
 .gameWrapper{
     display: flex;
-    justify-content: center;
+    justify-content: center; align-items: center;
 }
 .game1, .game2{
-    width:20vw; height:65vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    width:20vw; height:30vw;
+    padding-top: 1vh; padding-bottom: 1vh;
+    padding-left: 1vw; padding-right: 1vw;
     box-sizing: border-box;
-    box-shadow:  -3px 3px 10px #cbced1;
     background: url("https://i.postimg.cc/wxbhwjPk/frame.png") no-repeat;
     background-size: contain;
     visibility:hidden;
 }
-#timeAttack, #timeAttack img{
-    width: 80%;
-    height: 70%;
-    border-radius: 15%;
-    margin: auto;
+#timeAttack{
+    width: 18vw; height: 25vh;
+    background: url('https://i.postimg.cc/4NVVwLp2/bomb-removebg-preview.png') no-repeat;
+    background-size: contain;
+    margin: 0;
 }
-#timeAttack img{
-    width:100%; height:100%; border-radius: 15%;
-}
-#endless, #endless img{
-    width: auto;
-    height: 70%;
-    border-radius: 15%;
-    margin: auto;
-}
-#endless img{
-    width: 100%; height: 100%; border-radius: 15%;
+#endless{
+    width: 18vw; height: 25vh;
+    background: url('https://i.postimg.cc/QCWx8zj2/endless-removebg-preview.png') no-repeat;
+    background-size: contain;
+    margin: 0;
 }
 .game1 input, .game2 input{
-    width:60%; height:20%;
+    width:16vw; height:10vh;
     text-align: center;
-    margin-left: 20%;
     border-radius: 5px;
     font-size:1.5rem; font-family:fantasy;
     background:#ecf0f3;
